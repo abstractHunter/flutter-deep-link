@@ -1,4 +1,4 @@
-import 'package:deep_link_imp/pages/home_page.dart';
+import 'package:deep_link_imp/router.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,14 +10,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Flutter Deep Link Implementation',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const HomePage(),
+      routerConfig: router,
     );
   }
 }
