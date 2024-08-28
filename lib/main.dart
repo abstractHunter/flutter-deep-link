@@ -1,3 +1,4 @@
+import 'package:deep_link_imp/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,11 +17,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Hello world'),
-        ),
-      ),
+      home: const HomePage(),
     );
   }
 }
