@@ -14,9 +14,11 @@ final routes = [
     builder: (_, state) => const HomePage(),
     routes: [
       GoRoute(
-        path: 'settings',
+        path: 'settings/:id',
         name: 'settings',
-        builder: (_, state) => const SettingsPage(),
+        builder: (_, state) => SettingsPage(
+          id: state.pathParameters['id']!,
+        ),
       ),
     ],
   ),
